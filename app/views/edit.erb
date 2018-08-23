@@ -1,5 +1,5 @@
 <form action="/posts/<%= @post.id %>" method="POST" name="edit_post_form">
-  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <input id="hidden" type="hidden" name="_method" value="patch">
   <input type="text" name="name" value="<%= @post.name %>" placeholder="Blog Post Title:">
   <br>
   <textarea name="content" form="edit_post_form" value="<%= @post.content %>" placeholder="Update your blog post here:"></textarea>
